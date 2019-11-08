@@ -7,11 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/finalproject_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/finalproject.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/FoodType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/TourType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/GenericDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/AppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/DBException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finalproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Tour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,9 +38,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,8 +72,15 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2039072" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.nure.myronova.finalproject.db.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.nure.myronova.finalproject.exception" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
     </key>
@@ -225,7 +250,9 @@
       <workItem from="1572711112424" duration="645000" />
       <workItem from="1572793236649" duration="843000" />
       <workItem from="1572811300973" duration="39000" />
-      <workItem from="1572879888158" duration="801000" />
+      <workItem from="1572879888158" duration="1378000" />
+      <workItem from="1573063295526" duration="1264000" />
+      <workItem from="1573163157878" duration="7954000" />
     </task>
     <servers />
   </component>
