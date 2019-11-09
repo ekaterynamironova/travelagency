@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="finalproject" />
+      <artifact name="finalProject" />
+      <artifact name="finalProject" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/Path.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/FoodType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/TourType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/GenericDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Hotel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/AppException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/DBException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/finalProject.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/finalproject.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/SummaryTask4/db/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/finalproject.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/SummaryTask4/db/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/SummaryTask4/db/entity/Tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/SummaryTask4/db/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finalproject-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,21 +67,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/META-INF" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2039072" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.195" />
+    <property name="project.structure.side.proportion" value="0.30793154" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ua.nure.myronova.finalproject.db.entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web" />
+      <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.nure.myronova.finalproject" />
       <recent name="ua.nure.myronova.finalproject.exception" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.nure.myronova.finalproject.db.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -99,17 +104,18 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/finalproject/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/finalProject/jsp/index.jsp" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="finalproject">
+        <artifact name="finalProject">
           <settings>
-            <option name="CONTEXT_PATH" value="/finalproject" />
+            <option name="CONTEXT_PATH" value="/finalProject" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_27_finalproject_2" />
+        <option name="DEPLOY_TOMCAT_APPS" value="true" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -167,7 +173,8 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="finalproject" />
+          <artifact name="finalProject" />
+          <artifact name="finalProject" />
         </option>
       </method>
     </configuration>
@@ -252,7 +259,9 @@
       <workItem from="1572811300973" duration="39000" />
       <workItem from="1572879888158" duration="1378000" />
       <workItem from="1573063295526" duration="1264000" />
-      <workItem from="1573163157878" duration="7954000" />
+      <workItem from="1573163157878" duration="8002000" />
+      <workItem from="1573228518957" duration="6802000" />
+      <workItem from="1573255550013" duration="2993000" />
     </task>
     <servers />
   </component>
@@ -271,5 +280,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="entity classes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="entity classes added" />
   </component>
 </project>
