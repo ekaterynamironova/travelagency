@@ -31,6 +31,7 @@ public class DBManager {
             Context envContext = (Context) initContext.lookup("java:/comp/env");
             ds = (DataSource) envContext.lookup("jdbc/travel");
         } catch (NamingException ex) {
+            ex.printStackTrace();
             throw new DBException(Messages.ERR_CANNOT_OBTAIN_DATA_SOURCE, ex);
         }
     }

@@ -19,7 +19,7 @@ public class StartCommand extends Command {
     private static final long serialVersionUID = -5221913061023856722L;
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException, AppException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) throws AppException {
         List<Tour> tours = new TourDAOImpl().findAllUpcomingTours();
         Set<Country> countrySet = new HashSet<>();
         request.setAttribute("tours", tours);

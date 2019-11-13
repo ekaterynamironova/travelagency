@@ -9,11 +9,12 @@
   <component name="ChangeListManager">
     <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/finalproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/jsp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/jspf/header.jspf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +277,7 @@
       <workItem from="1573474145648" duration="3747000" />
       <workItem from="1573481268940" duration="33138000" />
       <workItem from="1573593254483" duration="8496000" />
-      <workItem from="1573644309830" duration="691000" />
+      <workItem from="1573644309830" duration="2768000" />
     </task>
     <task id="LOCAL-00001" summary="connection pool added">
       <created>1573258959277</created>
@@ -292,7 +293,21 @@
       <option name="project" value="LOCAL" />
       <updated>1573644681194</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="main page is loading">
+      <created>1573645222071</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573645222071</updated>
+    </task>
+    <task id="LOCAL-00004" summary="main page is loading">
+      <created>1573645294785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573645294785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,12 +340,18 @@
           <line>42</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="rs.getLong(Fields.SERVICE_ID)" language="JAVA" />
         <watch expression="serviceMap.get(rs.getLong(Fields.SERVICE_ID))" language="JAVA" />
+        <watch expression="ex.printStackTrace();" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
