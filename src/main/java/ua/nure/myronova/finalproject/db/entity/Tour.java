@@ -1,7 +1,9 @@
 package ua.nure.myronova.finalproject.db.entity;
 
-import ua.nure.myronova.finalproject.db.FoodType;
-import ua.nure.myronova.finalproject.db.TourType;
+
+
+import ua.nure.myronova.finalproject.db.type.FoodType;
+import ua.nure.myronova.finalproject.db.type.TourType;
 
 import java.util.Date;
 import java.util.Map;

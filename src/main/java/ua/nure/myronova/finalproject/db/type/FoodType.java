@@ -1,4 +1,4 @@
-package ua.nure.myronova.finalproject.db;
+package ua.nure.myronova.finalproject.db.type;
 
 public enum FoodType {
 
@@ -8,7 +8,7 @@ public enum FoodType {
 
     HB("HB"),
 
-    FB("GB"),
+    FB("FB"),
 
     AI("AI");
 

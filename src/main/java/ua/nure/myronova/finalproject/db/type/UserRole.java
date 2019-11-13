@@ -1,4 +1,6 @@
-package ua.nure.myronova.finalproject.db;
+package ua.nure.myronova.finalproject.db.type;
+
+import ua.nure.myronova.finalproject.db.entity.User;
 
 public enum UserRole {
 
@@ -6,7 +8,7 @@ public enum UserRole {
 
     MANAGER("manager"),
 
-    ADMINISTRATIOR("administrator");
+    ADMINISTRATOR("administrator");
 
     private String userRoleName;
 

@@ -1,16 +1,34 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Elfa
-  Date: 11/3/2019
-  Time: 5:03 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<header id="header" class="header fixed-top">
+    <div class="container">
+        <div class="row shadow p-3 mb-5 bg-white rounded">
+            <div class="col-lg-4 my-auto">
+                <img src="${pageContext.request.contextPath}/img/logo_eng.jpg" alt="ParadiseTravel" class="img-fluid w-100">
+            </div>
+            <div class="col-lg-3 my-auto">
+                <form class="form-inline">
+                    <div class="input-group border rounded-pill p-0">
+                        <input type="search" placeholder="Search..." class="form-control bg-none border-0">
+                        <div class="input-group-append border-0">
+                            <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5 my-auto">
+                <nav>
+                    <ul class="menu d-flex justify-content-center">
+                        <li class="menu_item">
+                            <a href="#">Search</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">Log In</a>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

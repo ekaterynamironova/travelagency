@@ -148,11 +148,6 @@
         </div>
     </div>
 </section>
-<section id="destination2" class="destination">
-    <div class="container">
-
-    </div>
-</section>
 <footer id="footer" class="footer">
     <div class="container">
         <p class="text-center">Created by Ekaterina Mironova, November 2019</p>

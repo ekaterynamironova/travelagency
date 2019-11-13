@@ -1,6 +1,7 @@
 package ua.nure.myronova.finalproject.db.entity;
 
-import ua.nure.myronova.finalproject.db.UserRole;
+
+import ua.nure.myronova.finalproject.db.type.UserRole;
 
 public class User extends Entity {
 

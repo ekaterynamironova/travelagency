@@ -1,0 +1,45 @@
+package ua.nure.myronova.finalproject.web;
+
+import ua.nure.myronova.finalproject.constants.Path;
+import ua.nure.myronova.finalproject.exception.AppException;
+import ua.nure.myronova.finalproject.web.command.Command;
+import ua.nure.myronova.finalproject.web.command.CommandContainer;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/controller")
+public class Controller extends HttpServlet {
+
+    private static final long serialVersionUID = 1872915617467927430L;
+
+    protected void doGet(HttpServletRequest request,
+                         HttpServletResponse response) throws ServletException, IOException {
+        process(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request,
+                          HttpServletResponse response) throws ServletException, IOException {
+        process(request, response);
+    }
+
+    private void process(HttpServletRequest request,
+                         HttpServletResponse response) throws IOException, ServletException {
+
+        String commandName = request.getParameter("command");
+        Command command = CommandContainer.get(commandName);
+        String forward = Path.PAGE_ERROR_PAGE;
+        try {
+            forward = command.execute(request, response);
+        } catch (AppException ex) {
+            request.setAttribute("errorMessage", ex.getMessage());
+        }
+
+        // go to forward
+        request.getRequestDispatcher(forward).forward(request, response);
+    }
+}

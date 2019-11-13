@@ -1,4 +1,4 @@
-package ua.nure.myronova.finalproject.db;
+package ua.nure.myronova.finalproject.db.type;
 
 public enum TourType {
 

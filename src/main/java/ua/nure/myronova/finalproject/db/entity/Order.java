@@ -1,6 +1,7 @@
 package ua.nure.myronova.finalproject.db.entity;
 
-import ua.nure.myronova.finalproject.db.OrderStatus;
+
+import ua.nure.myronova.finalproject.db.type.OrderStatus;
 
 import java.util.Date;
 
