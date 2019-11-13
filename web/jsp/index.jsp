@@ -152,11 +152,8 @@
                                 <div class="card-header">
                                     <div class="col-lg-12">
                                         <p>HOT</p>
-                                        <c:set var="cities" scope="page" value=""/>
                                         <c:set var="minStar" scope="page" value="5"/>
                                         <c:forEach var="routeEntry" items="${tour.route}">
-                                            <c:set var="cities" scope="page"
-                                                   value="%{cities + routeEntry.value.city.name}"/>
                                             <c:if test="${routeEntry.value.countStars < minStar}">
                                                 <c:set var="minStar" scope="page"
                                                        value="${routeEntry.value.countStars}"/>
@@ -172,7 +169,15 @@
                                 <div class="card-body text-danger">
                                     <h5 class="card-title">${tour.name}</h5>
                                     <p class="card-text">${tour.type.name()}</p>
-                                    <p class="card-text">Cities: ${cities}</p>
+                                    <p class="card-text">
+                                        Cities:
+                                        <c:forEach var="routeEntry" items="${tour.route}" varStatus="status">
+                                            <c:if test="${!status.first}">
+                                                <c:out value=", "/>
+                                            </c:if>
+                                            <c:out value="${routeEntry.value.city.name}" />
+                                        </c:forEach>
+                                    </p>
                                 </div>
                                 <div class="card-footer bg-transparent border-danger text-danger">${tour.price}</div>
                             </div>
@@ -183,11 +188,8 @@
                             <div class="card shadow h-100 w-100">
                                 <div class="card-header">
                                     <div class="col-lg-12">
-                                        <c:set var="cities" scope="page" value=""/>
                                         <c:set var="minStar" scope="page" value="5"/>
                                         <c:forEach var="routeEntry" items="${tour.route}">
-                                            <c:set var="cities" scope="page"
-                                                   value="%{cities + routeEntry.value.city.name}"/>
                                             <c:if test="${routeEntry.value.countStars < minStar}">
                                                 <c:set var="minStar" scope="page"
                                                        value="${routeEntry.value.countStars}"/>
@@ -203,7 +205,15 @@
                                 <div class="card-body">
                                     <h5 class="card-title">${tour.name}</h5>
                                     <p class="card-text">${tour.type.name()}</p>
-                                    <p class="card-text">Cities: ${cities}</p>
+                                    <p class="card-text">
+                                        Cities:
+                                        <c:forEach var="routeEntry" items="${tour.route}" varStatus="status">
+                                            <c:if test="${!status.first}">
+                                                <c:out value=", "/>
+                                            </c:if>
+                                            <c:out value="${routeEntry.value.city.name}" />
+                                        </c:forEach>
+                                    </p>
                                 </div>
                                 <div class="card-footer bg-transparent">${tour.price}</div>
                             </div>

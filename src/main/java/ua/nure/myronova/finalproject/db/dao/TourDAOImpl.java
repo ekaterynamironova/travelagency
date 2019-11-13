@@ -36,13 +36,14 @@ public class TourDAOImpl implements TourDAO {
             if (tourMap.containsKey(rs.getLong(Fields.TOUR_ID))) {
                 Tour tour = tourMap.get(rs.getLong(Fields.TOUR_ID));
                 Map<Integer, Hotel> route = tour.getRoute();
-                extractHotel(rs, hotelMap, serviceMap, cityMap, countryMap, route);
+                extractHotel(rs, tour, hotelMap, serviceMap, cityMap, countryMap, route);
+                tour.setRoute(route);
             } else {
                 Tour tour = new Tour();
                 tour.setId(rs.getLong(Fields.TOUR_ID));
                 tour.setName(rs.getString(Fields.TOUR_NAME));
                 System.out.println("tour " + tour.getName());
-                if (tour.getName().equals("Athens: metropolis and antiquity")) {
+                if (tour.getName().equals("Amazing Europe")) {
                     System.out.println("---");
                 }
                 tour.setDescription(rs.getString(Fields.TOUR_DESCRIPTION));
@@ -72,7 +73,7 @@ public class TourDAOImpl implements TourDAO {
                 tour.setImgPath(rs.getString(Fields.TOUR_IMG_PATH));
                 tour.setCountAll(rs.getInt(Fields.TOUR_COUNT_ALL));
                 Map<Integer, Hotel> route = new HashMap<>();
-                extractHotel(rs, hotelMap, serviceMap, cityMap, countryMap, route);
+                extractHotel(rs, tour, hotelMap, serviceMap, cityMap, countryMap, route);
                 tour.setRoute(route);
                 tourMap.put(tour.getId(), tour);
                 toursList.add(tour);
@@ -80,26 +81,34 @@ public class TourDAOImpl implements TourDAO {
         }
     }
 
-    private void extractHotel(ResultSet rs, Map<Long, Hotel> hotelMap, Map<Long, Service> serviceMap,
+    private void extractHotel(ResultSet rs, Tour tour, Map<Long, Hotel> hotelMap, Map<Long, Service> serviceMap,
                               Map<Long, City> cityMap, Map<Long, Country> countryMap,
                               Map<Integer, Hotel> route) throws SQLException {
-        if (!hotelMap.containsKey(rs.getLong(Fields.HOTEL_ID))) {
-            Hotel hotel = new Hotel();
-            hotel.setId(rs.getLong(Fields.HOTEL_ID));
-            hotel.setName(rs.getString(Fields.HOTEL_NAME));
-            hotel.setCountStars(rs.getInt(Fields.HOTEL_COUNT_STARS));
-            extractCity(rs, cityMap, countryMap, hotel);
-            extractService(rs, serviceMap, hotel);
-            hotelMap.put(hotel.getId(), hotel);
-            route.put(rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER), hotel);
-        } else {
-            route.put(rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER), hotelMap.get(rs.getLong(Fields.HOTEL_ID)));
-        }
+            if (!hotelMap.containsKey(rs.getLong(Fields.HOTEL_ID))) {
+                Hotel hotel = new Hotel();
+                hotel.setId(rs.getLong(Fields.HOTEL_ID));
+                hotel.setName(rs.getString(Fields.HOTEL_NAME));
+                hotel.setCountStars(rs.getInt(Fields.HOTEL_COUNT_STARS));
+                extractCity(rs, cityMap, countryMap, hotel);
+                int queueHotelNumber = rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER);
+                extractService(rs, serviceMap, hotel);
+                hotelMap.put(hotel.getId(), hotel);
+                route.put(queueHotelNumber, hotel);
+            } else {
+                route.put(rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER), hotelMap.get(rs.getLong(Fields.HOTEL_ID)));
+            }
     }
 
     private void extractService(ResultSet rs, Map<Long, Service> serviceMap, Hotel hotel) throws SQLException {
         List<Service> services = new ArrayList<>();
-        while (rs.getLong(Fields.HOTEL_ID) == hotel.getId() && !rs.isLast()) {
+        boolean first = true;
+
+        while (rs.getLong(Fields.ROUTE_HOTEL_ID) == hotel.getId() && !rs.isLast()) {
+            if (!first) {
+                rs.next();
+            } else {
+                first = false;
+            }
             if (!serviceMap.containsKey(rs.getLong(Fields.SERVICE_ID))) {
                 Service service = new Service();
                 service.setId(rs.getLong(Fields.SERVICE_ID));
@@ -109,10 +118,11 @@ public class TourDAOImpl implements TourDAO {
             } else {
                 services.add(serviceMap.get(rs.getLong(Fields.SERVICE_ID)));
             }
-            rs.next();
         }
         hotel.setServices(services);
     }
+
+
 
     private void extractCity(ResultSet rs, Map<Long, City> cityMap, Map<Long, Country> countryMap, Hotel hotel) throws SQLException {
         if (!cityMap.containsKey(rs.getLong(Fields.HOTEL_CITY_ID))) {

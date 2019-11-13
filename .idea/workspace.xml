@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="finalProject" />
-      <artifact name="finalProject" />
+      <artifact name="finalproject:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/finalProject.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/travel.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/travel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,9 +72,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/jsp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.195" />
     <property name="project.structure.side.proportion" value="0.30793154" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -114,12 +116,12 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/finalProject/controller?command=start" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/finalproject/controller?command=start" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="finalProject">
+        <artifact name="finalproject:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/finalProject" />
+            <option name="CONTEXT_PATH" value="/finalproject" />
           </settings>
         </artifact>
       </deployment>
@@ -183,8 +185,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="finalProject" />
-          <artifact name="finalProject" />
+          <artifact name="finalproject:war" />
         </option>
       </method>
     </configuration>
@@ -277,7 +278,8 @@
       <workItem from="1573474145648" duration="3747000" />
       <workItem from="1573481268940" duration="33138000" />
       <workItem from="1573593254483" duration="8496000" />
-      <workItem from="1573644309830" duration="2768000" />
+      <workItem from="1573644309830" duration="3460000" />
+      <workItem from="1573666771880" duration="8725000" />
     </task>
     <task id="LOCAL-00001" summary="connection pool added">
       <created>1573258959277</created>
@@ -307,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573645294785</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="main page is loading">
+      <created>1573647296109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573647296109</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,9 +350,9 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -351,7 +360,9 @@
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="rs.getLong(Fields.SERVICE_ID)" language="JAVA" />
         <watch expression="serviceMap.get(rs.getLong(Fields.SERVICE_ID))" language="JAVA" />
-        <watch expression="ex.printStackTrace();" language="JAVA" />
+        <watch expression="hotelMap.get(rs.getLong(Fields.HOTEL_ID))" language="JAVA" />
+        <watch expression="tour" language="JAVA" />
+        <watch expression="rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -25,6 +25,7 @@ public class StartCommand extends Command {
         request.setAttribute("tours", tours);
         for (Tour tour : tours) {
             tour.getRoute().forEach((k,v) -> {
+                System.out.println(v.getCity().getName());
                 countrySet.add(v.getCity().getCountry());
             });
         }
