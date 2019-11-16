@@ -39,8 +39,7 @@
                         <configuration>
                             <webAppSourceDirectory>./target/</webAppSourceDirectory>
                             <webXml>./src/web/WEB-INF/web.xml</webXml>
-                            <includes>**/*.jsp</includes>
-                            <jspc><failOnError>false</failOnError></jspc>
+                            <includes>./src/web/**/*.jsp</includes>
                         </configuration>
                     </execution>
                 </executions>
