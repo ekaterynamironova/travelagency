@@ -19,7 +19,7 @@ public class LoginCommand extends Command {
     private static final long serialVersionUID = 3134333601163894111L;
 
     @Override
-    public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandException {
+    public String execute(HttpServletRequest request, HttpServletResponse response) {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
         UserServiceImpl userService = new UserServiceImpl();
@@ -27,7 +27,7 @@ public class LoginCommand extends Command {
         String forward = request.getContextPath() + Path.COMMAND_LOGIN_SUCCESS;
         try {
             if (userService.loginCheck(login, password)) {
-                User user = userService.findUserByLogin(password);
+                User user = userService.findUserByLogin(login);
                 HttpSession session = request.getSession();
                 if (session.getAttribute("user") == null) {
                     session.setAttribute("user", user);
@@ -36,7 +36,7 @@ public class LoginCommand extends Command {
                 forward += "&role=" + user.getRole();
             }
         } catch (ServiceException e) {
-            throw new CommandException(Messages.ERR_CANNOT_OBTAIN_USER, e);
+            e.printStackTrace();
         }
         return forward + "&success=" + success;
     }

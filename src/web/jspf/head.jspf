@@ -1,5 +1,5 @@
-<%@ include file="../jspf/directive/page.jspf" %>
-<%@ include file="../jspf/directive/taglib.jspf" %>
+<%@ include file="directive/page.jspf" %>
+<%@ include file="directive/taglib.jspf" %>
 
 <head>
     <title>

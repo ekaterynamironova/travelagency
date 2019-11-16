@@ -23,7 +23,7 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                   <webXml>./web/WEB-INF/web.xml</webXml>        
+                   <webXml>src/web/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>

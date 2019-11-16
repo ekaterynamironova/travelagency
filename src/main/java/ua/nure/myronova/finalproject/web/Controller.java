@@ -37,10 +37,11 @@ public class Controller extends HttpServlet {
         }
         System.out.println(commandName);
         Command command = CommandContainer.get(commandName);
-        String forward = Path.PAGE_ERROR_PAGE;
+        String forward = request.getContextPath() + Path.PAGE_ERROR_PAGE;
         try {
             forward = command.execute(request, response);
         } catch (AppException ex) {
+            ex.printStackTrace();
             request.setAttribute("errorMessage", ex.getMessage());
         }
         if(action == Action.REDIRECT) {

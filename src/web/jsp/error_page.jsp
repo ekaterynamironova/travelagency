@@ -13,7 +13,7 @@
 	<table id="main-container">
 
 		<%-- HEADER --%>
-		<%@ include file="..//jspf/header.jspf"%>
+		<%@ include file="../jspf/header.jspf"%>
 		<%-- HEADER --%>
 
 		<tr >
