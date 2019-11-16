@@ -1,0 +1,57 @@
+<header id="header" class="header fixed-top">
+    <div class="container">
+        <div class="row shadow p-3 mb-5 bg-white rounded">
+            <div class="col-lg-4 my-auto">
+                <img src="${root}/img/logo_eng.jpg" alt="ParadiseTravel" class="img-fluid w-100">
+            </div>
+            <div class="col-lg-3 my-auto">
+                <form class="form-inline">
+                    <div class="input-group border rounded-pill p-0">
+                        <input type="search" placeholder="Search..." class="form-control bg-none border-0">
+                        <div class="input-group-append border-0">
+                            <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-5 my-auto">
+                <nav>
+                    <ul class="menu d-flex justify-content-center">
+                        <c:if test="${not empty user}">
+                            <c:choose>
+                                <c:when test="${user.role.getUserRoleName() == 'administrator'
+                                                || user.role.getUserRoleName() == 'manager'}">
+                                    <li class="menu_item">
+                                        <a href="controller?command=listUsers">All Users</a>
+                                    </li>
+                                </c:when>
+                                <c:when test="${user.role.getUserRoleName() == 'customer'}">
+                                    <li class="menu_item">
+                                        <a href="controller?command=listUsers">My account</a>
+                                    </li>
+                                </c:when>
+                            </c:choose>
+                            <li class="menu_item">
+                                <p>
+                                    <c:out value="${user.name}"/>
+                                    <c:out value="(${user.role.getUserRoleName()})"/>
+                                </p>
+                            </li>
+                            <li class="menu_item">
+                                <a href="controller?command=logout">Log Out</a>
+                            </li>
+                        </c:if>
+                        <c:if test="${empty user}">
+                            <li class="menu_item">
+                                <a href="${root}/jsp/login.jsp">Log In</a>
+                            </li>
+                            <li class="menu_item">
+                                <a href="${root}/jsp/register.jsp">Sign Up</a>
+                            </li>
+                        </c:if>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

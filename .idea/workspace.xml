@@ -6,10 +6,70 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/HashingSHA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/HashingSHA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/service/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="web directory changed">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/constants/Fields.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/constants/Path.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/DAOManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/bean/UserOrderBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/GenericDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Country.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Entity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Hotel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Tour.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/FoodType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/OrderStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/TourType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/UserRole.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/AppException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/CommandException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/DAOException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/Messages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/ServiceException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/exception/UtilException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/util/Action.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/util/HashingSHA.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/util/Validator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/CommandContainer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/ListUsersCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/LoginSuccessCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/LogoutCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/NoCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/RegisterCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/SearchCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/UserAccountCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/listener/ContextListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/classes/ua/nure/myronova/finalproject/web/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-api-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/protobuf-java-2.6.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/travel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/travel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/exception/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/exception/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/util/HashingSHA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/util/HashingSHA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginSuccessCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginSuccessCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/finalProject-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +104,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Elfa\Documents\epam\finalproject\.idea" />
+      </set>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,12 +130,11 @@
   <component name="ProjectId" id="1SsGzGhiAP827vwhenFxurNjc4H" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/web" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.195" />
     <property name="project.structure.side.proportion" value="0.30793154" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -90,6 +157,8 @@
       <recent name="ua.nure.myronova.finalproject.exception" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\src\main" />
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\src" />
       <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
       <recent name="C:\Users\Elfa\Documents\epam\finalproject\web" />
       <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
@@ -276,7 +345,7 @@
       <workItem from="1573687345439" duration="8559000" />
       <workItem from="1573764320280" duration="6830000" />
       <workItem from="1573831016819" duration="30968000" />
-      <workItem from="1573895027185" duration="18320000" />
+      <workItem from="1573895027185" duration="27770000" />
     </task>
     <task id="LOCAL-00001" summary="connection pool added">
       <created>1573258959277</created>
@@ -327,7 +396,49 @@
       <option name="project" value="LOCAL" />
       <updated>1573915098913</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="utilException is added">
+      <created>1573915486257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573915486257</updated>
+    </task>
+    <task id="LOCAL-00009" summary="loginsuccesscommand is changed">
+      <created>1573917656452</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573917656452</updated>
+    </task>
+    <task id="LOCAL-00010" summary="web directory changed">
+      <created>1573920412559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573920412559</updated>
+    </task>
+    <task id="LOCAL-00011" summary="register.jsp added and pom.xml changed">
+      <created>1573922396529</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573922396529</updated>
+    </task>
+    <task id="LOCAL-00012" summary="web directory changed">
+      <created>1573923539407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573923539407</updated>
+    </task>
+    <task id="LOCAL-00013" summary="web directory changed">
+      <created>1573924415862</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573924415862</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,13 +463,19 @@
     <MESSAGE value="main page is loading" />
     <MESSAGE value="finalproject.war is added" />
     <MESSAGE value="login page is added" />
-    <option name="LAST_COMMIT_MESSAGE" value="login page is added" />
+    <MESSAGE value="utilException is added" />
+    <MESSAGE value="loginsuccesscommand is changed" />
+    <MESSAGE value="register.jsp added and pom.xml changed" />
+    <MESSAGE value="web directory changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="web directory changed" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="request.getParameter(&quot;login&quot;)" language="JAVA" />
         <watch expression="request.getParameter(&quot;success&quot;)" language="JAVA" />
+        <watch expression="request.getContextPath() + Path.COMMAND_LIST_USERS" language="JAVA" />
+        <watch expression="request.getContextPath() + Path.COMMAND_START" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
