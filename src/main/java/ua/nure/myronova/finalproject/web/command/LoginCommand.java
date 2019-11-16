@@ -27,8 +27,13 @@ public class LoginCommand extends Command {
         String forward = request.getContextPath() + Path.COMMAND_LOGIN_SUCCESS;
         try {
             if (userService.loginCheck(login, password)) {
+                User user = userService.findUserByLogin(password);
+                HttpSession session = request.getSession();
+                if (session.getAttribute("user") == null) {
+                    session.setAttribute("user", user);
+                }
                 success = true;
-                forward += "&login=" + login;
+                forward += "&role=" + user.getRole();
             }
         } catch (ServiceException e) {
             throw new CommandException(Messages.ERR_CANNOT_OBTAIN_USER, e);
