@@ -103,11 +103,11 @@ public class UserServiceImpl implements UserService {
             if (photoURL != null) {
                 URL urlPhoto = getClass().getClassLoader().getResource(photoURL);
                 BufferedImage photo = ImageIO.read(urlPhoto);
-                File output = new File("../../web/img/users/" + photoURL + ".jpg");
+                File output = new File("/img/users/" + photoURL + ".jpg");
                 ImageIO.write(photo, "jpg", output);
                 user.setImgPath(output.getAbsolutePath());
             } else {
-                File defaultPicture = new File("../../web/img/users/user.jpg");
+                File defaultPicture = new File("/img/users/user.jpg");
                 user.setImgPath(defaultPicture.getAbsolutePath());
             }
             user.setDiscount(0);

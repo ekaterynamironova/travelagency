@@ -23,29 +23,29 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                   <webXml>src/web/WEB-INF/web.xml</webXml>
+                   <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-jspc-maven-plugin</artifactId>
-                <version>9.4.7.v20170914</version>
-                <executions>
-                    <execution>
-                        <id>jspc</id>
-                        <goals>
-                            <goal>jspc</goal>
-                        </goals>
-                        <configuration>
-                            <webAppSourceDirectory>./target/overlaidjsps</webAppSourceDirectory>
-                            <webXml>./src/web/WEB-INF/web.xml</webXml>
-                            <webXmlFragment>./target/webfrag.xml</webXmlFragment>
-                            <includes>**/*.jsp</includes>
-                            <jspc><failOnError>false</failOnError></jspc>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.eclipse.jetty</groupId>-->
+<!--                <artifactId>jetty-jspc-maven-plugin</artifactId>-->
+<!--                <version>9.4.7.v20170914</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>jspc</id>-->
+<!--                        <goals>-->
+<!--                            <goal>jspc</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <webAppSourceDirectory>./target/overlaidjsps</webAppSourceDirectory>-->
+<!--                            <webXml>./src/web/WEB-INF/web.xml</webXml>-->
+<!--                            <webXmlFragment>./target/webfrag.xml</webXmlFragment>-->
+<!--                            <includes>**/*.jsp</includes>-->
+<!--                            <jspc><failOnError>false</failOnError></jspc>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
