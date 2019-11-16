@@ -37,7 +37,7 @@
                             <goal>jspc</goal>
                         </goals>
                         <configuration>
-                            <webAppSourceDirectory>./target/overlaidjsps</webAppSourceDirectory>
+                            <webAppSourceDirectory>./target/</webAppSourceDirectory>
                             <webXml>./src/web/WEB-INF/web.xml</webXml>
                             <includes>**/*.jsp</includes>
                             <jspc><failOnError>false</failOnError></jspc>
