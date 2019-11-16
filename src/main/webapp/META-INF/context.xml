@@ -8,5 +8,5 @@
               defaultAutoCommit="false"
               defaultTransactionIsolation="READ_COMMITTED"
               connectionProperties="useUnicode=yes;characterEncoding=utf8;"
-              url="jdbc:mysql://db:3306/travel"/>
+              url="jdbc:mysql://db:3306/travel/useSSL=false"/>
 </Context>
