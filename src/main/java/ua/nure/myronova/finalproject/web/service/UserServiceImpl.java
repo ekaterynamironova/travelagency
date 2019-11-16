@@ -1,11 +1,10 @@
 package ua.nure.myronova.finalproject.web.service;
 
-import com.sun.xml.internal.ws.util.UtilException;
-import ua.nure.myronova.finalproject.constants.Fields;
 import ua.nure.myronova.finalproject.db.dao.UserDAOImpl;
 import ua.nure.myronova.finalproject.db.entity.User;
 import ua.nure.myronova.finalproject.db.type.UserRole;
 import ua.nure.myronova.finalproject.exception.DAOException;
+import ua.nure.myronova.finalproject.exception.UtilException;
 import ua.nure.myronova.finalproject.exception.ServiceException;
 import ua.nure.myronova.finalproject.exception.Messages;
 import ua.nure.myronova.finalproject.util.HashingSHA;
@@ -116,7 +115,7 @@ public class UserServiceImpl implements UserService {
             if (getInstance().create(user)) {
                 isCreated = true;
             }
-        } catch (IOException | DAOException e) {
+        } catch (IOException | DAOException | UtilException e) {
             e.printStackTrace();
         }
         return isCreated;

@@ -24,4 +24,6 @@ public class Messages {
 
     public static final String ERR_ENTER_CORRECT_LOGINPASS = "A user with this username and password" +
                                                             " is not registered or is blocked";
+
+    public static final String ERR_CANNOT_ENCODE_PASSWORD = "Cannot encode user password";
 }
