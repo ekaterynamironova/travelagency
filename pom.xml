@@ -39,7 +39,6 @@
                         <configuration>
                             <webAppSourceDirectory>./target/overlaidjsps</webAppSourceDirectory>
                             <webXml>./src/web/WEB-INF/web.xml</webXml>
-                            <webXmlFragment>./target/webfrag.xml</webXmlFragment>
                             <includes>**/*.jsp</includes>
                             <jspc><failOnError>false</failOnError></jspc>
                         </configuration>
