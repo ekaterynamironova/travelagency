@@ -3,7 +3,7 @@
               auth="Container"
               type="javax.sql.DataSource"
               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
-              username="elfa_elfa" password="elfa"
+              username="root" password="elfa"
               driverClassName="com.mysql.cj.jdbc.Driver"
               defaultAutoCommit="false"
               defaultTransactionIsolation="READ_COMMITTED"
