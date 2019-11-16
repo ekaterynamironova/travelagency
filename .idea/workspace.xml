@@ -6,17 +6,104 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/finalProject.xml" beforeDir="false" />
+    <list default="true" id="371a29c6-66c3-4d65-b6d5-2794812f0de2" name="Default Changelist" comment="finalproject.war is added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/CommandException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/UtilException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/HashingSHA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/ListUsersCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LoginSuccessCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/RegisterCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/UserAccountCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/login_background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/img/users/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsp/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/META-INF/finalproject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/constants/Fields.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/constants/Path.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/bean/UserOrderBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/GenericDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Hotel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/Tour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/FoodType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/TourType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/db/type/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/exception/AppException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/exception/DAOException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/exception/DBException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/exception/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/CommandContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/LogoutCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/NoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/SearchCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/listener/ContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/myronova/finalproject/web/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/classes/ua/nure/your_last_name/SummaryTask4/util/Validator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/lib/commons-logging-api-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/lib/mysql-connector-java-8.0.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/finalproject/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/constants/Fields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/constants/Fields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/constants/Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/constants/Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/DAOManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/type/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/db/type/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/AppException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/AppException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/DBException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/exception/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/util/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/CommandContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/CommandContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LogoutCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/finalproject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/constants/Fields.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/constants/Fields.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/constants/Path.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/constants/Path.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/DBManager.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/TourDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/dao/UserDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/type/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/db/type/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/exception/DBException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/exception/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/exception/Messages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/CommandContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/CommandContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LoginCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LogoutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/LogoutCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/command/StartCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/nure/myronova/finalproject/web/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/nure/your_last_name/SummaryTask4/util/Validator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/css/travel.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/travel.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jspf/head.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/web/jspf/head.jspf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jspf/header.jspf" beforeDir="false" afterPath="$PROJECT_DIR$/web/jspf/header.jspf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,9 +129,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="jsf" />
-        <option value="Enum" />
         <option value="Interface" />
         <option value="Jsp File" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -72,34 +159,34 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/META-INF/MANIFEST.MF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/img/users" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.195" />
     <property name="project.structure.side.proportion" value="0.30793154" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
-      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web" />
-      <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ua.nure.myronova.finalproject.web.command" />
+      <recent name="ua.nure.myronova.finalproject.web" />
+      <recent name="ua.nure.myronova.finalproject.db.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\img\users" />
       <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\img" />
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
       <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\js" />
       <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\css" />
-      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jspf" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ua.nure.myronova.finalproject" />
       <recent name="ua.nure.myronova.finalproject.exception" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ua.nure.myronova.finalproject.web.command" />
-      <recent name="ua.nure.myronova.finalproject.web" />
-      <recent name="ua.nure.myronova.finalproject.db.entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web\jsp" />
+      <recent name="C:\Users\Elfa\Documents\epam\finalproject\web" />
+      <recent name="C:\Users\Elfa\Documents\8semester\Internet\lb4\finalproject\web\jsp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -279,7 +366,11 @@
       <workItem from="1573481268940" duration="33138000" />
       <workItem from="1573593254483" duration="8496000" />
       <workItem from="1573644309830" duration="3460000" />
-      <workItem from="1573666771880" duration="8725000" />
+      <workItem from="1573666771880" duration="16504000" />
+      <workItem from="1573687345439" duration="8559000" />
+      <workItem from="1573764320280" duration="6830000" />
+      <workItem from="1573831016819" duration="30968000" />
+      <workItem from="1573895027185" duration="17764000" />
     </task>
     <task id="LOCAL-00001" summary="connection pool added">
       <created>1573258959277</created>
@@ -316,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573647296109</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finalproject.war is added">
+      <created>1573676245573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573676245573</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,30 +437,23 @@
     <MESSAGE value="entity classes added" />
     <MESSAGE value="connection pool added" />
     <MESSAGE value="main page is loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="main page is loading" />
+    <MESSAGE value="finalproject.war is added" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalproject.war is added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/Controller.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/StartCommand.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/ua/nure/myronova/finalproject/web/command/LoginSuccessCommand.java</url>
           <line>31</line>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="rs.getLong(Fields.SERVICE_ID)" language="JAVA" />
-        <watch expression="serviceMap.get(rs.getLong(Fields.SERVICE_ID))" language="JAVA" />
-        <watch expression="hotelMap.get(rs.getLong(Fields.HOTEL_ID))" language="JAVA" />
-        <watch expression="tour" language="JAVA" />
-        <watch expression="rs.getInt(Fields.ROUTE_QUEUE_HOTEL_NUMBER)" language="JAVA" />
+        <watch expression="request.getParameter(&quot;login&quot;)" language="JAVA" />
+        <watch expression="request.getParameter(&quot;success&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

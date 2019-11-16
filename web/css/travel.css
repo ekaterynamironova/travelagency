@@ -18,7 +18,7 @@ ul, li {
 
 }
 
-.menu_item a {
+.menu_item a, .menu_item p {
 	color: #2F4858;
 	font-size: 18px;
 	font-weight: 700;
@@ -58,6 +58,7 @@ footer {
 	text-align: center;
     position: absolute;
     top: 60vh;
+    z-index: 10;
 }
 
 .carousel-caption h5{
@@ -68,12 +69,11 @@ footer {
 .search {
 	width:100%;
 	padding:0;
-	margin:0;
-	position: absolute;
+    position: absolute;
   	left: 50%;
-  	margin-top:  -10vh;
-  	transform: translateX(-50%);
-  	z-index: 1;
+    margin: -10vh 0 0;
+    transform: translateX(-50%);
+  	z-index: 12;
 }
 
 .search select, .search input {

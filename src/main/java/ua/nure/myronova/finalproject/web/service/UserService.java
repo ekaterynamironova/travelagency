@@ -1,10 +1,24 @@
 package ua.nure.myronova.finalproject.web.service;
 
-import javax.xml.rpc.ServiceException;
+import ua.nure.myronova.finalproject.db.entity.User;
+import ua.nure.myronova.finalproject.exception.ServiceException;
 
-public class UserService {
+import java.util.List;
 
-    boolean checkLogin(String login, String password) throws ServiceException {
-        return true;
-    };
+public interface UserService {
+
+    User findEntityById(Long id) throws ServiceException;
+
+    User findUserByLogin(String login) throws ServiceException;
+
+    List<User> findAllEntities() throws ServiceException;
+
+    boolean delete(Long id) throws ServiceException;
+
+    boolean update(User entity) throws ServiceException;
+
+    boolean register(String login, String password, String role, String email, String name,
+                     String surname, String telephone) throws ServiceException;
+
+    boolean loginCheck(String login, String password) throws ServiceException;
 }

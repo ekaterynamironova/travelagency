@@ -39,5 +39,19 @@ public class Fields {
     public static final String SERVICE_ID = "services.id";
     public static final String SERVICE_NAME = "services.name";
 
+    //user
+    public static final String USER_ID = "users.id";
+    public static final String USER_LOGIN = "users.login";
+    public static final String USER_PASSWORD = "users.password";
+    public static final String USER_ROLE = "users.role";
+    public static final String USER_STATUS_BLOCKED = "users.status_blocked";
+    public static final String USER_EMAIL = "users.email";
+    public static final String USER_NAME = "users.name";
+    public static final String USER_SURNAME = "users.surname";
+    public static final String USER_TELEPHONE = "users.telephone";
+    public static final String USER_MONEY = "users.money";
+    public static final String USER_IMG_PATH = "users.img_path";
+    public static final String USER_DISCOUNT = "users.discount";
+    public static final String USER_MAX_DISCOUNT = "users.max_discount";
 
 }

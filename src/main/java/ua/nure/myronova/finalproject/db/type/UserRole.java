@@ -1,7 +1,5 @@
 package ua.nure.myronova.finalproject.db.type;
 
-import ua.nure.myronova.finalproject.db.entity.User;
-
 public enum UserRole {
 
     CUSTOMER("customer"),

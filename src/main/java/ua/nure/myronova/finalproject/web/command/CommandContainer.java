@@ -10,6 +10,10 @@ public class CommandContainer {
     static {
         commands.put("start", new StartCommand());
         commands.put("search", new SearchCommand());
+        commands.put("login", new LoginCommand());
+        commands.put("loginSuccess", new LoginSuccessCommand());
+        commands.put("register", new RegisterCommand());
+        commands.put("logout", new LogoutCommand());
         commands.put("noCommand", new NoCommand());
     }
 

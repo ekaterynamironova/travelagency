@@ -6,4 +6,5 @@ import ua.nure.myronova.finalproject.exception.DAOException;
 public interface UserDAO extends GenericDAO<User> {
 
     User findUserByLogin(String login) throws DAOException;
+
 }

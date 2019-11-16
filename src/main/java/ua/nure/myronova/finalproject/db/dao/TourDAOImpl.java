@@ -1,12 +1,11 @@
 package ua.nure.myronova.finalproject.db.dao;
 
 import ua.nure.myronova.finalproject.constants.Fields;
-import ua.nure.myronova.finalproject.db.DBManager;
+import ua.nure.myronova.finalproject.db.DAOManager;
 import ua.nure.myronova.finalproject.db.entity.*;
 import ua.nure.myronova.finalproject.db.type.FoodType;
 import ua.nure.myronova.finalproject.db.type.TourType;
 import ua.nure.myronova.finalproject.exception.DAOException;
-import ua.nure.myronova.finalproject.exception.DBException;
 import ua.nure.myronova.finalproject.exception.Messages;
 
 import java.sql.*;
@@ -32,7 +31,6 @@ public class TourDAOImpl implements TourDAO {
         Map<Long, Service> serviceMap = new LinkedHashMap<>();
 
         while (rs.next()) {
-            System.out.println("1 or more result in set");
             if (tourMap.containsKey(rs.getLong(Fields.TOUR_ID))) {
                 Tour tour = tourMap.get(rs.getLong(Fields.TOUR_ID));
                 Map<Integer, Hotel> route = tour.getRoute();
@@ -42,10 +40,6 @@ public class TourDAOImpl implements TourDAO {
                 Tour tour = new Tour();
                 tour.setId(rs.getLong(Fields.TOUR_ID));
                 tour.setName(rs.getString(Fields.TOUR_NAME));
-                System.out.println("tour " + tour.getName());
-                if (tour.getName().equals("Amazing Europe")) {
-                    System.out.println("---");
-                }
                 tour.setDescription(rs.getString(Fields.TOUR_DESCRIPTION));
                 if (TourType.EXCURSION.getTypeName().equals(rs.getString(Fields.TOUR_TYPE))) {
                     tour.setType(TourType.EXCURSION);
@@ -101,14 +95,7 @@ public class TourDAOImpl implements TourDAO {
 
     private void extractService(ResultSet rs, Map<Long, Service> serviceMap, Hotel hotel) throws SQLException {
         List<Service> services = new ArrayList<>();
-        boolean first = true;
-
-        while (rs.getLong(Fields.ROUTE_HOTEL_ID) == hotel.getId() && !rs.isLast()) {
-            if (!first) {
-                rs.next();
-            } else {
-                first = false;
-            }
+        while (rs.getLong(Fields.ROUTE_HOTEL_ID) == hotel.getId()) {
             if (!serviceMap.containsKey(rs.getLong(Fields.SERVICE_ID))) {
                 Service service = new Service();
                 service.setId(rs.getLong(Fields.SERVICE_ID));
@@ -118,11 +105,15 @@ public class TourDAOImpl implements TourDAO {
             } else {
                 services.add(serviceMap.get(rs.getLong(Fields.SERVICE_ID)));
             }
+            if (!rs.isLast()) {
+                rs.next();
+            } else {
+                break;
+            }
         }
+        rs.previous();
         hotel.setServices(services);
     }
-
-
 
     private void extractCity(ResultSet rs, Map<Long, City> cityMap, Map<Long, Country> countryMap, Hotel hotel) throws SQLException {
         if (!cityMap.containsKey(rs.getLong(Fields.HOTEL_CITY_ID))) {
@@ -157,24 +148,21 @@ public class TourDAOImpl implements TourDAO {
         PreparedStatement stmt = null;
         ResultSet rs = null;
         Connection con = null;
-        DBManager dbManager = null;
+        DAOManager daoManager = null;
         try {
-            dbManager = DBManager.getInstance();
-            System.out.println("dbmanager created");
-            con = dbManager.getConnection();
-            System.out.println("connection created " + con);
+            daoManager = DAOManager.getInstance();
+            con = daoManager.getConnection();
             stmt = con.prepareStatement(SQL_FIND_ALL_UPCOMING_TOURS);
             stmt.setDate(1, new java.sql.Date(System.currentTimeMillis()));
-            System.out.println("statement created " + stmt);
             rs = stmt.executeQuery();
             extractTours(rs, toursList);
             System.out.println(toursList);
 
             con.commit();
-        } catch (SQLException | DBException ex) {
+        } catch (SQLException ex) {
             throw new DAOException(Messages.ERR_CANNOT_OBTAIN_UPCOMING_TOURS, ex);
         } finally {
-            dbManager.close(con, stmt, rs);
+            daoManager.close(con, stmt, rs);
         }
         return toursList;
     }
